@@ -1,6 +1,6 @@
 /* Custom styles for Hemendra Verma Portfolio */
 :root {
-  --bg: #2955a5;
+  --bg: #000000;
   --panel: rgba(255, 255, 255, 0.06);
   --border: rgba(255, 255, 255, 0.12);
   --text: rgba(230, 241, 255, 0.95);
@@ -23,7 +23,7 @@ body {
 body {
   margin: 0;
   font-family: 'Poppins', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  background: radial-gradient(circle at top, #16494d 0%, var(--bg) 60%);
+  background: #000000;
   color: var(--text);
   line-height: 1.6;
 }
@@ -323,12 +323,12 @@ section {
   padding: 60px 0;
 }
 
-.skills .progress {
+.skills .skill-progress {
   margin-bottom: 24px;
-  background: rgba(219, 18, 18, 0.06);
+  background: var(--panel);
   border-radius: 10px;
   padding: 16px;
-  border: 1px solid rgba(184, 20, 20, 0.08);
+  border: 1px solid var(--border);
 }
 
 .skills .skill {
@@ -348,22 +348,70 @@ section {
 }
 
 .skills .progress-bar-wrap {
-  background: rgba(68, 81, 71, 0.53);
+  width: 100%;
+  background: rgba(0, 0, 0, 0.3);
   border-radius: 8px;
-  height: 12px;
+  height: 20px;
   overflow: hidden;
-  border: 1px solid rgba(0, 200, 255, 0.2);
+  border: 1px solid rgba(56, 53, 59, 0.5);
 }
 
-.skills .progress-bar {
+.skills .skill-progress-bar {
+  width: 0;
   height: 100%;
-  background: linear-gradient(90deg, var(--accent), rgba(0, 199, 255, 0.6));
+  background: #a855f7;
   border-radius: 8px;
   transition: width 1.5s ease;
-  box-shadow: 0 0 10px rgba(174, 95, 15, 0.4);
+  box-shadow: 0 0 20px rgba(168, 85, 247, 1);
 }
 
 /* Resume */
+.resume {
+  padding: 60px 0;
+}
+
+/* Contact */
+.contact {
+  padding: 60px 0;
+}
+
+.contact .info {
+  padding: 30px;
+  background: linear-gradient(135deg, rgba(0, 199, 255, 0.08), rgba(255, 255, 255, 0.03));
+  border-radius: var(--radius);
+  border: 1px solid rgba(0, 199, 255, 0.15);
+}
+
+.contact .info > div {
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.contact .info > div:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.contact .info i {
+  font-size: 1.8rem;
+  color: var(--accent);
+  margin-bottom: 10px;
+}
+
+.contact .info h4 {
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: var(--text);
+  font-size: 1.1rem;
+}
+
+.contact .info p {
+  color: var(--muted);
+  margin: 0;
+}
+
 .resume {
   padding: 60px 0;
 }
