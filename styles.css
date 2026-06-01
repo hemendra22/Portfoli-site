@@ -473,6 +473,121 @@ section {
   color: var(--muted);
 }
 
+.resume-skills-group {
+  margin-bottom: 20px;
+}
+
+.resume-skills-group:last-child {
+  margin-bottom: 0;
+}
+
+.resume-skills-group h4 {
+  font-size: 1rem;
+  margin-bottom: 8px;
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.resume-skills-group ul {
+  margin-top: 0;
+}
+
+.resume-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 12px;
+  margin-top: 12px;
+}
+
+.resume-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.resume-links a:hover {
+  text-decoration: none;
+  opacity: 0.85;
+}
+
+.resume-links-sep {
+  color: var(--muted);
+  user-select: none;
+}
+
+.resume-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.resume-table th,
+.resume-table td {
+  padding: 12px 14px;
+  text-align: left;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  color: var(--text);
+}
+
+.resume-table th {
+  color: var(--muted);
+  font-weight: 600;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  background: rgba(0, 199, 255, 0.06);
+}
+
+.resume-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.resume-table tbody tr:hover td {
+  background: rgba(0, 199, 255, 0.04);
+}
+
+.resume .table-responsive {
+  margin: 0;
+  border-radius: 8px;
+  overflow-x: auto;
+}
+
+.resume-certifications-row {
+  margin-top: 8px;
+}
+
+.resume-certifications-row .resume-title {
+  margin-top: 0;
+}
+
+.resume-item-full {
+  width: 100%;
+}
+
+.resume-certifications-row .resume-table th,
+.resume-certifications-row .resume-table td {
+  padding: 14px 20px;
+}
+
+.resume-certifications-row .resume-table th:nth-child(1),
+.resume-certifications-row .resume-table td:nth-child(1) {
+  width: 40%;
+}
+
+.resume-certifications-row .resume-table th:nth-child(2),
+.resume-certifications-row .resume-table td:nth-child(2) {
+  width: 45%;
+}
+
+.resume-certifications-row .resume-table th:nth-child(3),
+.resume-certifications-row .resume-table td:nth-child(3) {
+  width: 15%;
+  text-align: center;
+}
+
 /* Footer & small text */
 footer {
   padding: 40px 0 24px;
