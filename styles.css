@@ -288,39 +288,76 @@ section {
   font-size: 1.4rem;
 }
 
-.about .content ul {
-  list-style: none;
-  padding: 0;
-  margin: 24px 0 0;
+.about-details {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
-.about .content li {
-  padding: 10px 0;
+.about-detail-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px 24px;
+  align-items: start;
+}
+
+.about-detail-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
   font-weight: 500;
   color: var(--text);
-  display: flex;
-  align-items: center;
-  line-height: 1.8;
+  line-height: 1.6;
+  min-width: 0;
 }
 
-.about .content li i {
-  margin-right: 12px;
+.about-detail-item i {
+  flex-shrink: 0;
+  margin-top: 4px;
   color: var(--accent);
   font-size: 1.1rem;
 }
 
-.about .content li strong {
+.about-detail-item strong {
+  flex-shrink: 0;
   color: var(--text);
-  margin-right: 8px;
+  white-space: nowrap;
 }
 
-.about .content li span {
+.about-detail-item span {
   color: var(--muted);
+  min-width: 0;
+  word-break: break-word;
+}
+
+@media (max-width: 768px) {
+  .about-detail-row {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
 }
 
 /* Skills */
 .skills {
   padding: 60px 0;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  align-items: stretch;
+}
+
+.skills-grid .skill-progress {
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 .skills .skill-progress {
