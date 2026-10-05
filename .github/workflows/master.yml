@@ -29,7 +29,7 @@ jobs:
       - name: Upload Website
         uses: actions/upload-pages-artifact@v3
         with:
-          path: '.Portfoli-site'
+          path: './Portfoli-site'
 
       - name: Deploy to GitHub Pages
         id: deployment
